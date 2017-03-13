@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Responsive Image Gallery</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+		<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+    </head>
+    <body>
+    <div class="wrapper">
+		<div class="container">
+			<div class="header">
+			<div class="clr"></div>
+			</div><!-- header -->
+			
+			<div class="content">
+				<div id="rg-gallery" class="rg-gallery">
+					<div class="rg-thumbs">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper">
+							<div class="es-nav">
+								<span class="es-nav-prev">Previous</span>
+								<span class="es-nav-next">Next</span>
+							</div>
+							<div class="es-carousel">
+								<ul>
+									<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
+									<li><a href="#"><img src="images/thumbs/2.jpg" data-large="images/2.jpg" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+									<li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/3.jpg" alt="image03" data-description="A plaintful story from a sistering vale" /></a></li>
+									<li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/4.jpg" alt="image04" data-description="My spirits to attend this double voice accorded" /></a></li>
+									<li><a href="#"><img src="images/thumbs/5.jpg" data-large="images/5.jpg" alt="image05" data-description="And down I laid to list the sad-tuned tale" /></a></li>
+									<li><a href="#"><img src="images/thumbs/6.jpg" data-large="images/6.jpg" alt="image06" data-description="Ere long espied a fickle maid full pale" /></a></li>
+									<li><a href="#"><img src="images/thumbs/7.jpg" data-large="images/7.jpg" alt="image07" data-description="Tearing of papers, breaking rings a-twain" /></a></li>
+									<li><a href="#"><img src="images/thumbs/8.jpg" data-large="images/8.jpg" alt="image08" data-description="Storming her world with sorrow's wind and rain" /></a></li>
+									<li><a href="#"><img src="images/thumbs/9.jpg" data-large="images/9.jpg" alt="image09" data-description="Upon her head a platted hive of straw" /></a></li>
+									<li><a href="#"><img src="images/thumbs/10.jpg" data-large="images/10.jpg" alt="image10" data-description="Which fortified her visage from the sun" /></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- rg-gallery -->
+			</div><!-- content -->
+		</div><!-- container -->
+		
+<div class="custom-checkbox">
+<form>	
+	<fieldset>
+		<legend>Which genres do you like?</legend>
+		<input type="checkbox" name="genre" id="check-1" value="action" />
+		<label for="check-1">Action / Adventure</label>
+		
+		<input type="checkbox" name="genre" id="check-2" value="comedy" />
+
+		<label for="check-2">Comedy</label>
+		
+		<input type="checkbox" name="genre" id="check-3" value="epic" />
+		<label for="check-3">Epic / Historical</label>
+		
+		<input type="checkbox" name="genre" id="check-4" value="science" />
+		<label for="check-4">Science Fiction</label>
+		
+		<input type="checkbox" name="genre" id="check-5" value="romance" />
+		<label for="check-5">Romance</label>
+
+		
+		<input type="checkbox" name="genre" id="check-6" value="western" />
+		<label for="check-6">Western</label>
+	</fieldset>
+</form>
+</div>
+<div id="vmcselect" class="vs-select" title="Test" tabindex="-1" data-name="site"  data-size="15" data-width="400">
+	<div class="vs-title">
+		<div class="vs-text"></div>
+		<div class="vs-icon"></div>
+	</div>
+	<div class="vs-option" id="vs-option" tabindex="-1">
+	<div class="vs-scroll">
+	<div class="vs-items">
+		<div data-value="0" class="vs-item">Option 0</div>
+		<div data-value="1" class="vs-item">Option 1</div>
+		<div data-value="2" class="vs-item">Option 2</div
+		><div data-value="3" class="vs-item">Option 3</div>
+		<div data-value="4" class="vs-item">Option 4</div>
+		<div data-value="5" class="vs-item">Option 5</div>
+	</div>
+	</div>
+	</div>
+</div>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+		<script src="js/select.js"></script>
+		<script src="js/select-main.js"></script>
+		<script type="text/javascript" src="js/customInput.jquery.js"></script>
+		</div>
+    </body>
+</html>
